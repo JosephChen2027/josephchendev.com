@@ -83,7 +83,7 @@ If Performance drops below 95 it's almost certainly the Google Fonts CSS request
 
 You'll rank for "Joseph Chen Web3" within a week. To rank for the *high-value* queries (`hire Solidity developer`, `Solidity audit prep`, `Chainlink VRF integration`), add 3-5 case-study pages:
 
-- `/case-studies/megacharm-chainlink-vrf.html` — how the on-chain lottery uses VRF
+- `/case-studies/chainlink-vrf-integration.html` — provably-fair randomness in Solidity
 - `/case-studies/uups-upgradeable-pattern.html` — internal audit walkthrough
 - `/case-studies/secureflow-slither-llm-pipeline.html` — how AI + static analysis combine
 - `/blog/preventing-front-running-on-bnb-chain.html`
@@ -92,7 +92,7 @@ You'll rank for "Joseph Chen Web3" within a week. To rank for the *high-value* q
 Each one should:
 - Have its own `<title>` and `<meta description>` targeting one specific long-tail phrase
 - Include a `BlogPosting` or `TechArticle` JSON-LD block linking back to your `Person`
-- Internal-link back to `/` and to the project page on `megacharm.io` / `secureflow.tech`
+- Internal-link back to `/` and to the project page on `secureflow.tech`
 - Be 1500-2500 words minimum (sweet spot for technical SEO)
 
 This is more hours than 1 evening, but in 6 weeks it's the difference between "Joseph who?" and "Joseph who comes up #1 for Chainlink VRF integration".
@@ -101,7 +101,7 @@ This is more hours than 1 evening, but in 6 weeks it's the difference between "J
 
 Google's algorithm cares more about who links to you than what's on your page. Cheap, fast wins:
 
-- **GitHub README** for both MegaCharm and SecureFlow → link `josephchendev.com` in the repo description and in the README
+- **GitHub README** for SecureFlow → link `josephchendev.com` in the repo description and in the README
 - **HN profile** → put `josephchendev.com` in your "about"
 - **Wellfound, Contra, web3.career, Gitcoin, Code4rena** profiles → all let you link your site
 - **DeFiHackLabs / Solidity-related GitHub orgs** → contribute one PR to a popular Solidity repo, your `git config user.email` flows to the repo's `CONTRIBUTORS.md`

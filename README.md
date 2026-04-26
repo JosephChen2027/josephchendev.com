@@ -30,7 +30,6 @@ portfolio-joseph-chen/
 
 ## Featured projects
 
-- **MegaCharm** — on-chain daily lottery on BNB Chain
 - **SecureFlow** — AI smart-contract scanner / B2B security questionnaire SaaS
 
 ## Contact
@@ -70,7 +69,7 @@ outreach scripts and resume).
 
 - Canonical URL, robots meta, semantic landmarks (`<header>`, `<main>`, `<footer>`, `<nav>`)
 - Open Graph + Twitter card with 1200×1200 image
-- JSON-LD: `Person`, `WebSite`, `ProfessionalService`, `ItemList` with `SoftwareApplication` entries for MegaCharm and SecureFlow
+- JSON-LD: `Person`, `WebSite`, `ProfessionalService`, `ItemList` with `SoftwareApplication` entry for SecureFlow
 - `robots.txt` + `sitemap.xml` + PWA `site.webmanifest`
 - `<picture>` with WebP + PNG fallback, `width`/`height`, `fetchpriority="high"`, image preload
 - Font preconnect + preload, deferred JS, accessible focus rings, skip-link, reduced-motion support
