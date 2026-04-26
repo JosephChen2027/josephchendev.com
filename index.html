@@ -204,6 +204,18 @@
               "codeRepository": "https://github.com/SelfLearnedDev2027/meowcoin",
               "description": "Reference ERC-20 with trading gate, anti-whale limits, and configurable tax-on-transfer. Foundry test suite incl. fuzzing."
             }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "CatnipFarm",
+              "programmingLanguage": "Solidity",
+              "url": "https://github.com/SelfLearnedDev2027/catnipfarm",
+              "codeRepository": "https://github.com/SelfLearnedDev2027/catnipfarm",
+              "description": "Single-pool ERC-20 staking-rewards contract using the Synthetix per-share accumulator pattern. Foundry test suite with conservation-invariant fuzz."
+            }
           }
         ]
       }
@@ -400,6 +412,27 @@
           </ul>
           <div class="project-links">
             <a href="https://github.com/SelfLearnedDev2027/meowcoin" target="_blank" rel="noopener noreferrer">github.com/SelfLearnedDev2027/meowcoin ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Open source · DeFi reference</div>
+          <h3>CatnipFarm</h3>
+          <p class="project-sub">Single-pool ERC-20 staking with constant reward emission (Synthetix pattern).</p>
+          <p class="project-body">
+            Solidity reference for the most-copied DeFi primitive on Ethereum — the per-share
+            reward accumulator. Stake any ERC-20, earn any ERC-20 at a constant per-second emission
+            rate. Every action (stake, withdraw, claim, top-up) is O(1) regardless of staker count
+            because each user records the value of the global accumulator at their last interaction
+            and computes pending reward as <code>stake × (current_index − debt_index)</code>.
+            17-test Foundry suite including a 256-run conservation fuzz that proves total earned
+            never exceeds total emitted.
+          </p>
+          <ul class="tech">
+            <li>Solidity 0.8.24</li><li>Foundry</li><li>OpenZeppelin v5</li><li>SafeERC20</li><li>ReentrancyGuard</li><li>Fuzz testing</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/SelfLearnedDev2027/catnipfarm" target="_blank" rel="noopener noreferrer">github.com/SelfLearnedDev2027/catnipfarm ↗</a>
           </div>
         </article>
       </div>
