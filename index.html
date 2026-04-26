@@ -192,6 +192,18 @@
               "url": "https://secureflow.tech",
               "description": "AI-powered smart contract scanner and enterprise security questionnaire engine."
             }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "MeowCoin (MEOW)",
+              "programmingLanguage": "Solidity",
+              "url": "https://github.com/SelfLearnedDev2027/meowcoin",
+              "codeRepository": "https://github.com/SelfLearnedDev2027/meowcoin",
+              "description": "Reference ERC-20 with trading gate, anti-whale limits, and configurable tax-on-transfer. Foundry test suite incl. fuzzing."
+            }
           }
         ]
       }
@@ -367,6 +379,27 @@
           </ul>
           <div class="project-links">
             <a href="https://secureflow.tech" target="_blank" rel="noopener noreferrer">secureflow.tech ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Open source · Reference contract</div>
+          <h3>MeowCoin (MEOW)</h3>
+          <p class="project-sub">Solidity ERC-20 reference: trading gate, anti-whale limits, configurable tax-on-transfer.</p>
+          <p class="project-body">
+            A small, deliberately-readable ERC-20 written for interview practice and as a starting point
+            for memecoin-style launches. Implements three optional, owner-gated features through a single
+            OpenZeppelin v5 <code>_update</code> hook: a one-way trading flag that blocks sniper bots
+            until launch, basis-point caps on per-tx and max-wallet balances, and a hardcapped (5%) tax
+            routed to a treasury — with a 256-run Foundry fuzz suite proving the maxTx invariant holds.
+            README documents every feature intentionally left out (reflection, anti-MEV, blacklists,
+            upgradeability) and why.
+          </p>
+          <ul class="tech">
+            <li>Solidity 0.8.24</li><li>Foundry</li><li>OpenZeppelin v5</li><li>ERC-20</li><li>Fuzz testing</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/SelfLearnedDev2027/meowcoin" target="_blank" rel="noopener noreferrer">github.com/SelfLearnedDev2027/meowcoin ↗</a>
           </div>
         </article>
       </div>
