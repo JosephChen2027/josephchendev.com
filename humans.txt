@@ -1,0 +1,15 @@
+/* TEAM */
+Developer: Joseph Chen
+Contact:   Josephbbob [at] proton.me
+Site:      https://josephchendev.com
+GitHub:    https://github.com/SelfLearnedDev2027
+Stack:     Solidity, React, Next.js, ethers.js, Hardhat, Foundry
+
+/* THANKS */
+OpenZeppelin, Chainlink, the Foundry team, the React community.
+
+/* SITE */
+Last update:  2026-04-26
+Hosted on:    Netlify (static)
+Standards:    HTML5, CSS3, JSON-LD, Open Graph, schema.org
+Tooling:      Hand-written, no build pipeline

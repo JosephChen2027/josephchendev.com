@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+# AV / backup stubs
+.!*!*
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+# Local-only
+*.local
+.env
+.env.*
+!.env.example
+# Logs
+*.log
+npm-debug.log*
+# Build output (this site has none, but future-proof)
+dist/
+build/
+node_modules/
+.netlify/
