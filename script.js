@@ -1,7 +1,15 @@
 // Year stamp
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Reveal-on-scroll for sections (subtle fade-in)
+// Mark <html> so CSS can apply the hide-then-fade-in only when JS is enabled.
+// JS-disabled visitors (and any failure path) get instant content with no flash.
+document.documentElement.classList.add('js');
+
+// Reveal-on-scroll for sections (subtle fade-in). The .reveal initial state and
+// .in transition rules live in styles.css so a strict CSP (no inline-style) works.
+const reveals = document.querySelectorAll('.section, .hero');
+reveals.forEach((el) => el.classList.add('reveal'));
+
 const io = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -11,16 +19,7 @@ const io = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.12 });
 
-document.querySelectorAll('.section, .hero').forEach((el) => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(24px)';
-  el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
-  io.observe(el);
-});
-
-const style = document.createElement('style');
-style.textContent = `.in { opacity: 1 !important; transform: none !important; }`;
-document.head.appendChild(style);
+reveals.forEach((el) => io.observe(el));
 
 // Smooth-scroll offset for sticky nav (Safari fix)
 document.querySelectorAll('a[href^="#"]').forEach((a) => {
