@@ -6,7 +6,7 @@
   <title>Joseph Chen — Hire a Solidity / Web3 Developer · Smart Contracts &amp; React dApps</title>
   <meta name="description" content="Hire Joseph Chen, an independent Web3 developer building production smart contracts and security tooling (SecureFlow). Solidity, DeFi, Chainlink VRF, smart-contract audits, React/Next.js dApps. Available for full-time, contract, or freelance — remote, US-based." />
   <meta name="author" content="Joseph Chen" />
-  <meta name="keywords" content="hire Solidity developer, hire Web3 developer, freelance Solidity engineer, Solidity contract developer, smart contract developer for hire, DeFi engineer for hire, blockchain engineer remote, Chainlink VRF developer, BNB Chain developer, Ethereum developer, React Web3 developer, dApp developer, Next.js engineer, SecureFlow, Joseph Chen" />
+  <meta name="keywords" content="hire Solidity developer, hire Web3 developer, freelance Solidity engineer, Solidity contract developer, smart contract developer for hire, DeFi engineer for hire, blockchain engineer remote, Chainlink VRF developer, BNB Chain developer, Ethereum developer, React Web3 developer, dApp developer, Next.js engineer, ERC-20 developer, Merkle airdrop, token vesting, staking rewards, Foundry developer, OpenZeppelin, SecureFlow, Joseph Chen" />
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
   <meta name="googlebot" content="index,follow" />
   <meta name="rating" content="general" />
@@ -216,6 +216,30 @@
               "codeRepository": "https://github.com/SelfLearnedDev2027/catnipfarm",
               "description": "Single-pool ERC-20 staking-rewards contract using the Synthetix per-share accumulator pattern. Foundry test suite with conservation-invariant fuzz."
             }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "PawClaim",
+              "programmingLanguage": "Solidity",
+              "url": "https://github.com/SelfLearnedDev2027/pawclaim",
+              "codeRepository": "https://github.com/SelfLearnedDev2027/pawclaim",
+              "description": "Merkle-tree airdrop reference contract for ERC-20 distributions. Stores only the Merkle root on-chain; recipients claim via O(log N) proof. Foundry test suite builds in-memory Merkle tree for end-to-end verification."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "CatVesting",
+              "programmingLanguage": "Solidity",
+              "url": "https://github.com/SelfLearnedDev2027/catvesting",
+              "codeRepository": "https://github.com/SelfLearnedDev2027/catvesting",
+              "description": "Linear ERC-20 vesting contract with cliff and optional revocable schedule. Snapshots vested amount on revoke to prevent curve drift. Foundry test suite with monotonicity fuzz."
+            }
           }
         ]
       }
@@ -269,7 +293,7 @@
           </div>
           <ul class="stats">
             <li><strong>5+</strong><span>Years building software</span></li>
-            <li><strong>2</strong><span>Live Web3 products</span></li>
+            <li><strong>5</strong><span>Shipped Web3 projects</span></li>
             <li><strong>100%</strong><span>On-chain &amp; verified</span></li>
           </ul>
         </div>
@@ -433,6 +457,48 @@
           </ul>
           <div class="project-links">
             <a href="https://github.com/SelfLearnedDev2027/catnipfarm" target="_blank" rel="noopener noreferrer">github.com/SelfLearnedDev2027/catnipfarm ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Open source · Token launch primitive</div>
+          <h3>PawClaim</h3>
+          <p class="project-sub">Solidity Merkle-tree airdrop: claim ERC-20 distributions via Merkle proof.</p>
+          <p class="project-body">
+            The dominant pattern for token-launch airdrops on Ethereum (Uniswap, ENS, Optimism,
+            Arbitrum all use this). Each leaf is <code>keccak256(account, amount)</code>; the
+            contract stores only the 32-byte Merkle root and verifies <code>O(log&nbsp;N)</code>
+            proofs at claim time. Includes hard-coded immutable claim deadline (no rug),
+            <code>ReentrancyGuard</code>, double-claim protection, and owner-only sweep of
+            unclaimed balance after the window. 10-test Foundry suite that builds an in-memory
+            Merkle tree to verify every claim path end-to-end.
+          </p>
+          <ul class="tech">
+            <li>Solidity 0.8.24</li><li>Foundry</li><li>OpenZeppelin v5</li><li>Merkle proofs</li><li>SafeERC20</li><li>ReentrancyGuard</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/SelfLearnedDev2027/pawclaim" target="_blank" rel="noopener noreferrer">github.com/SelfLearnedDev2027/pawclaim ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Open source · Token launch primitive</div>
+          <h3>CatVesting</h3>
+          <p class="project-sub">Solidity linear vesting with cliff and optional revoke — for team / investor allocations.</p>
+          <p class="project-body">
+            Linear ramp from cliff to end, with an optional <code>revoke()</code> that
+            <em>snapshots</em> the vested amount at the moment it's called — preventing the
+            classic vesting bug where pulling unvested tokens out shifts the curve and
+            silently shortchanges the beneficiary. The README documents every design decision
+            (no off-schedule top-ups, no upgradeability, immutable beneficiary) and what you
+            should change before production. 19-test Foundry suite including a 256-run fuzz
+            proving <code>vestedAmount()</code> is monotonically non-decreasing.
+          </p>
+          <ul class="tech">
+            <li>Solidity 0.8.24</li><li>Foundry</li><li>OpenZeppelin v5</li><li>SafeERC20</li><li>Fuzz testing</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/SelfLearnedDev2027/catvesting" target="_blank" rel="noopener noreferrer">github.com/SelfLearnedDev2027/catvesting ↗</a>
           </div>
         </article>
       </div>
