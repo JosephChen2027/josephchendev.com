@@ -1,10 +1,11 @@
 {
-  "name": "Joseph Chen — Web3 Developer",
+  "name": "Joseph Chen — Backend Engineer",
   "short_name": "Joseph Chen",
-  "description": "Independent Web3 developer specializing in Solidity, DeFi, and smart contract security.",
+  "description": "Backend engineer · Blockchain · AI. SecureFlow, MemeFactory, AgentFlow. B.S. CS, WGU 2021.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
+  "lang": "en-US",
   "background_color": "#0a0a14",
   "theme_color": "#0b0b14",
   "icons": [

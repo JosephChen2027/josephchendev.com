@@ -8,18 +8,24 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://josephchendev.com/assets/og-image.jpg</image:loc>
-      <image:title>Joseph Chen — Web3 Developer</image:title>
-      <image:caption>Independent Web3 developer specializing in Solidity, DeFi, and React dApps.</image:caption>
+      <image:title>Joseph Chen — Backend Engineer · Blockchain · AI</image:title>
+      <image:caption>Joseph Chen, backend engineer (B.S. CS, WGU 2021) — SecureFlow, MemeFactory, AgentFlow.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://josephchendev.com/assets/avatar.png</image:loc>
-      <image:title>Joseph Chen avatar</image:title>
+      <image:title>Joseph Chen — portrait</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://josephchendev.com/resume.pdf</loc>
     <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://josephchendev.com/llms.txt</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

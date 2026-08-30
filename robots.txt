@@ -3,7 +3,25 @@ Allow: /
 Disallow: /assets/temp/
 Disallow: /draft/
 
-# Slow down aggressive bots
+# AI / LLM crawlers (GEO — allow indexing for generative search)
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: cohere-ai
+Allow: /
+User-agent: Bytespider
+Allow: /
+
+# Slow down aggressive SEO bots
 User-agent: AhrefsBot
 Crawl-delay: 10
 User-agent: SemrushBot
@@ -11,7 +29,7 @@ Crawl-delay: 10
 User-agent: MJ12bot
 Crawl-delay: 10
 
-# Encourage good actors
+# Search & social preview bots
 User-agent: Googlebot
 Allow: /
 User-agent: Bingbot

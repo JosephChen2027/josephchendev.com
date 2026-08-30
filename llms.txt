@@ -1,0 +1,71 @@
+# Joseph Chen — josephchendev.com
+
+> Backend engineer · Blockchain · AI · B.S. Computer Science, WGU 2021 · Remote, US-based · Open to work
+
+Joseph Chen is an independent backend engineer who builds production systems in Python, Node.js, Solidity, and AI/LLM pipelines. He operates three live products solo: SecureFlow (AI smart-contract scanner), MemeFactory (Web3 launch agency), and AgentFlow (AI customer support SaaS).
+
+## Contact
+
+- Email: Josephbbob@proton.me
+- Portfolio: https://josephchendev.com
+- Resume (PDF): https://josephchendev.com/resume.pdf
+- GitHub: https://github.com/JosephChen2027
+
+## Identity
+
+- Full name: Joseph Chen
+- Role: Backend Engineer (Blockchain · AI)
+- Education: B.S. Computer Science, Western Governors University (WGU), graduated 2021
+- Location: Remote, United States
+- Employment preference: Full-time, contract, or freelance — remote roles in backend, Web3, AI, or platform engineering
+
+## Live products
+
+- SecureFlow — https://secureflow.tech — AI-powered smart contract scanner and security questionnaire engine (Python, Slither, GPT-4/Claude)
+- MemeFactory — https://memefactory.it.com — Memecoin launch agency for content creators (token deployment, launch campaigns)
+- AgentFlow — https://agentflow.llc — AI customer support agent SaaS with RAG and embed widget (Next.js, TypeScript, OpenAI)
+
+## Open-source repositories (GitHub: JosephChen2027)
+
+### Backend & IT
+
+- url-shortener — Python/SQLite link shortener with click analytics
+- job-queue — Python/SQLite background job queue with worker retries
+- rest-inventory — Python REST CRUD inventory API
+- log-analyzer — Web access log parser and traffic reports
+- health-monitor — HTTP uptime and latency checker
+- rag-pipeline — RAG document chunking and TF-IDF retrieval
+- secureflow — SecureFlow production backend source
+- agentflow — AgentFlow production backend source
+
+### Blockchain
+
+- lending-pool — DeFi lending (collateral, borrow, liquidate) — Solidity/Foundry
+- simpleswap — Uniswap V2-style AMM — Solidity/Foundry
+- yieldvault — DeFi staking vault — Solidity/Foundry
+- moonrocket — Launch-gated memecoin token — Solidity/Foundry
+- fairmint — Deflationary burn memecoin — Solidity/Foundry
+- dex-arb-scanner — DEX arbitrage spread scanner — Python
+
+## Technical stack
+
+Python, Node.js, FastAPI, Flask, REST APIs, async workers, PostgreSQL, SQLite, Redis, Docker, Linux VPS, Cloudflare, GitHub Actions, Solidity, Foundry, EVM, Slither, GPT-4o, Claude, LangChain, RAG, embeddings, prompt engineering
+
+## Frequently asked questions
+
+**Is Joseph Chen available for hire?**  
+Yes. Open to full-time, contract, freelance, or advisory backend engineering roles. Remote-first, US-based.
+
+**What kind of backend work does Joseph Chen do?**  
+Production Python/Node.js APIs, async workers, LLM pipelines, blockchain data ingestion, smart-contract analysis (Slither), RAG inference, and deployment automation.
+
+**Where is Joseph Chen's code?**  
+16 public repositories at https://github.com/JosephChen2027 plus live demos at SecureFlow, MemeFactory, and AgentFlow.
+
+**What chains has Joseph Chen shipped on?**  
+Primarily Ethereum, Arbitrum, and BNB Smart Chain. Comfortable with any EVM chain.
+
+## Optional
+
+- Portfolio source code: https://github.com/JosephChen2027/josephchendev.com
+- Full page: https://josephchendev.com

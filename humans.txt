@@ -1,15 +1,26 @@
 /* TEAM */
 Developer: Joseph Chen
+Role:      Backend Engineer · Blockchain · AI
 Contact:   Josephbbob [at] proton.me
 Site:      https://josephchendev.com
-Projects:  https://secureflow.tech · https://memefactory.it.com · https://agentflow.llc
-Stack:     Solidity, React, Next.js, Python, OpenAI, Foundry
+GitHub:    https://github.com/JosephChen2027
+Education: B.S. Computer Science, Western Governors University (WGU), 2021
+Location:  Remote, United States
+
+/* PROJECTS */
+SecureFlow:   https://secureflow.tech
+MemeFactory:  https://memefactory.it.com
+AgentFlow:    https://agentflow.llc
+
+/* STACK */
+Python, Node.js, REST APIs, SQLite, PostgreSQL, Docker, GitHub Actions,
+Solidity, Foundry, Slither, GPT-4o, Claude, RAG, LangChain
 
 /* THANKS */
-OpenZeppelin, Chainlink, the Foundry team, the React community.
+OpenZeppelin, Foundry, the Python & Node.js communities.
 
 /* SITE */
 Last update:  2026-08-30
 Hosted on:    Netlify (static)
-Standards:    HTML5, CSS3, JSON-LD, Open Graph, schema.org
+Standards:    HTML5, CSS3, JSON-LD, Open Graph, schema.org, llms.txt
 Tooling:      Hand-written, no build pipeline
