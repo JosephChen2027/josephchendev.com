@@ -366,6 +366,61 @@ main { position: relative; z-index: 1; max-width: var(--max); margin: 0 auto; pa
 }
 .project-links a:hover { color: var(--accent-2); border-color: var(--accent-2); }
 
+/* ---------- Open source ---------- */
+.section-lede {
+  max-width: 62ch;
+  margin: 12px 0 0;
+  color: var(--text-dim);
+  font-size: 16px;
+  line-height: 1.6;
+}
+.oss-group { margin-bottom: 40px; }
+.oss-group-title {
+  font-size: 13px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--text-mute);
+  margin: 0 0 16px;
+  font-weight: 600;
+}
+.oss-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+.oss-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px 20px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  transition: transform 0.2s, border-color 0.2s, background 0.2s;
+}
+.oss-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-strong);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+}
+.oss-card strong {
+  font-size: 16px;
+  letter-spacing: -0.01em;
+}
+.oss-card span:last-child {
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.45;
+}
+.oss-stack {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px;
+  color: var(--accent-2);
+  letter-spacing: 0.2px;
+}
+.oss-cta { margin-top: 8px; }
+
 /* ---------- Contact ---------- */
 .contact { padding-bottom: 120px; }
 .contact-card {
